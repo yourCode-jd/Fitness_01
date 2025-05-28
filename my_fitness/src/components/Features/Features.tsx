@@ -2,8 +2,9 @@
 
 import React, { useRef } from 'react'
 import Image from 'next/image'
-import features from '@/data/feature'
+import { features, featuresList } from '@/data/feature'
 import { motion, useInView } from 'framer-motion'
+import Link from 'next/link'
 
 export const Features = () => {
     const ref = useRef(null)
@@ -42,7 +43,7 @@ export const Features = () => {
                         }}
                         className="main_medHeading masked-text"
                     >
-                        Achieve your goals easier than ever before. We offer a wide range of rewarding amenities which are all personalized to specific your needs.
+                        <em className='animated link'><Link href="/membership">Achieve</Link></em> your goals easier than ever before. We offer a wide range of rewarding amenities which are all <em className='animated link'><Link href="/membership">personalized</Link></em> to specific <em className='animated link'><Link href="/clients">your needs</Link></em>.
                     </motion.p>
 
                     {/* Features Grid */}
@@ -55,27 +56,27 @@ export const Features = () => {
                                 animate={isInView ? 'visible' : 'hidden'}
                                 variants={fadeBlurUp}
                             >
-                                <div className="relative h-full bg-[#0d0d0d] overflow-hidden p-10 border border-transparent rounded-xl shadow-xl transition-all duration-500 hover:border-gradient-to-r from-pink-500 to-purple-500">
+                                <div className="relative min-h-[400px] bg-[#0d0d0d] overflow-hidden p-10 rounded-xl shadow-xl flex justify-end flex-col">
 
                                     {/* Floating Icon with Parallax Effect */}
-                                    {/* <motion.div className='absolute top-0 left-0 w-full h-full object-cover'>
+                                    <motion.div className='absolute top-0 left-0 w-full h-full object-cover blur-sm '>
                                         <Image
                                             src={items.src}
                                             alt={items.title}
                                             width={400}
-                                            height={300}
+                                            height={400}
                                             className=" w-full h-full object-cover"
                                         />
-                                    </motion.div> */}
+                                    </motion.div>
 
                                     {/* Masked Title */}
                                     <motion.h3
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                                         transition={{ delay: index * 0.2 + 0.2, duration: 0.4 }}
-                                        className="main_medHeading textGradient mb-3 masked-text"
+                                        className="main_medHeading textGradient mb-3 masked-text text-white!"
                                     >
-                                        {items.title}
+                                        <em className='animated'>{items.title}</em>
                                     </motion.h3>
 
                                     {/* Description */}
@@ -83,7 +84,7 @@ export const Features = () => {
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                                         transition={{ delay: index * 0.2 + 0.3, duration: 0.4 }}
-                                        className="main_paragraph text-gray-300"
+                                        className="main_paragraph text-white! z-[1] relative mt-0!"
                                     >
                                         {items.description}
                                     </motion.p>
@@ -95,6 +96,21 @@ export const Features = () => {
                         ))}
                     </ul>
                 </div>
+                <div className="relative mt-18 masked-text">
+                    <ul className='grid grid-cols-4 gap-4'>
+                        {featuresList.map((section, index) => (
+                            <li key={index}>
+                                <h4 className="main_smallHeading font-bold! tracking-normal!">{section.title}</h4>
+                                <ul>
+                                    {section.items.map((item, idx) => (
+                                        <li key={idx} className='main_paragraph mt-0!'>{item}</li>
+                                    ))}
+                                </ul>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
             </div>
         </section>
     )

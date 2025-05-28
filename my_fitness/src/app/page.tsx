@@ -2,6 +2,8 @@ import About from "@/components/About/About";
 import Banner from "@/components/Banner/Banner";
 import { Features } from "@/components/Features/Features";
 import Header from "@/components/Header/Header";
+import Portfolio from "@/components/Portfolio/Portfolio";
+import Testimonial from "@/components/Testimonial/Testimonial";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <Banner />
       <About />
       <Features />
+      <Portfolio />
+      <Testimonial />
     </>
   );
 }
