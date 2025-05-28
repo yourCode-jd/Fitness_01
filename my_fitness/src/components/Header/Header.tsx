@@ -18,9 +18,9 @@ function Header() {
                     <Navigation />
                 </div> */}
 
-                <div className=' bg-opacity-60 backdrop-blur-xs rounded-full flex justify-between items-center gap-2.5 py-6 '>
-                    <h1 className='masked-text text-3xl font-extrabold text-[#ec4899]'>LOGO</h1>
-                    <Image src="hamBurger.svg" alt="humBurger" width={45} height={45} className=' masked-text' onClick={toggleMenu} />
+                <div className='flex justify-between items-center gap-2.5 py-6 '>
+                    <h1 className='masked-text text-3xl font-bold tracking-widest text-white'><em className='p-0! animated'>LOGO</em></h1>
+                    <Image src="hamBurger.svg" alt="humBurger" width={45} height={45} className=' masked-text cursor-pointer' onClick={toggleMenu} />
                 </div>
 
                 {/* Desktop Toggle Navigation */}

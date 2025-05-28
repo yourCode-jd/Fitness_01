@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { Cormorant_Garamond, Open_Sans } from "next/font/google";
 import "./globals.css";
 
 const CormorantFont = Cormorant_Garamond({
   variable: "--font-CormorantGaramond",
+  subsets: ["latin"],
+  weight: "400", // Add the required weight property
+});
+
+const openSansFont = Open_Sans({
+  variable: "--font-OpenSans",
   subsets: ["latin"],
   weight: "400", // Add the required weight property
 });
@@ -20,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${CormorantFont.variable} antialiased `}
+      <body className={`${CormorantFont.variable, openSansFont.variable} antialiased `}
       >
         {children}
       </body>
