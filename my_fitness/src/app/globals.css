@@ -229,3 +229,28 @@ section {
     opacity: 1;
   }
 }
+
+.textSlider {
+  transform: translateX(20%) translateZ(0);
+  animation: text-animation-reverse linear infinite 25s;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes text-animation-reverse {
+
+  0%,
+  100% {
+    transform: translateX(0%) translateZ(0);
+  }
+
+  60% {
+    transform: translateX(50%) translateZ(0);
+  }
+}
