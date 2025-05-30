@@ -26,7 +26,7 @@ function ContactForm() {
                         />
                         <button
                             type="submit"
-                            className="w-full py-4 bg-[#fd6a2c] text-white font-semibold rounded-md hover:bg-[#e85b1d] transition"
+                            className="w-full py-4 bg-[var(--secondary-color)] text-white font-semibold rounded-md hover:bg-[#e85b1d] transition"
                         >
                             Contact Us
                         </button>
