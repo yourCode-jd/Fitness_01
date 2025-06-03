@@ -3,7 +3,7 @@ import React from 'react'
 
 function Banner() {
     return (
-        <div className='relative h-screen overflow-hidden'>
+        <div className='relative h-[500px] lg:h-screen overflow-hidden'>
             {/* Video Background */}
             <video
                 className='absolute top-0 left-0 w-full h-full object-cover z-0'

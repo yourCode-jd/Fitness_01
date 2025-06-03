@@ -2,12 +2,12 @@ import React from 'react'
 
 function ContactForm() {
     return (
-        <section>
+        <section className='pb-20 lg:pb-40'>
             <div className='container'>
-                <h1 className='main_heading text-center max-w-1/2 mx-auto!'>Receive <em className='animated'>Exclusive </em>Promotions</h1>
-                <div className=" bg-[#f6e9db] flex items-center justify-center mb-40">
+                <h1 className='main_heading text-center max-w-full md:max-w-1/2 mx-auto!'>Receive <em className='animated'>Exclusive </em>Promotions</h1>
+                <div className=" bg-[#f6e9db] flex items-center justify-center">
                     <form className="bg-[#f6e9db] pt-15 rounded-md space-y-4 w-full max-w-3xl">
-                        <div className="flex gap-4">
+                        <div className="flex flex-wrap md:flex-nowrap gap-4">
                             <input
                                 type="text"
                                 placeholder="Name"

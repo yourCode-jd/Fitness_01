@@ -25,7 +25,7 @@ export const Features = () => {
     }
 
     return (
-        <section ref={ref} className="py-24 overflow-hidden">
+        <section ref={ref} className="pb-12 md:py-24 overflow-hidden">
             <div className="container">
                 <div className="flex flex-col items-center justify-center gap-20">
                     {/* Heading with masked reveal */}
@@ -41,7 +41,7 @@ export const Features = () => {
                                 transition: { duration: 0.8, ease: 'easeOut' },
                             },
                         }}
-                        className="main_medHeading masked-text"
+                        className="main_medHeading masked-text lg:text-left text-center"
                     >
                         <em className='animated link'><Link href="/membership">Achieve</Link></em> your goals easier than ever before. We offer a wide range of rewarding amenities which are all <em className='animated link'><Link href="/membership">personalized</Link></em> to specific <em className='animated link'><Link href="/clients">your needs</Link></em>.
                     </motion.p>
@@ -56,7 +56,7 @@ export const Features = () => {
                                 animate={isInView ? 'visible' : 'hidden'}
                                 variants={fadeBlurUp}
                             >
-                                <div className="relative min-h-[400px] bg-[#0d0d0d] overflow-hidden p-10 rounded-xl shadow-xl flex justify-end flex-col">
+                                <div className="relative min-h-[350px] md:min-h-[400px] bg-[#0d0d0d] overflow-hidden p-6 md:p-10 rounded-xl shadow-xl flex justify-end flex-col">
 
                                     {/* Floating Icon with Parallax Effect */}
                                     <motion.div className='absolute top-0 left-0 w-full h-full object-cover blur-sm '>
@@ -96,8 +96,8 @@ export const Features = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="relative mt-18 masked-text">
-                    <ul className='grid grid-cols-4 gap-4'>
+                <div className="relative mt-12 md:mt-18 masked-text">
+                    <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                         {featuresList.map((section, index) => (
                             <li key={index}>
                                 <h4 className="main_smallHeading font-bold! tracking-normal!">{section.title}</h4>

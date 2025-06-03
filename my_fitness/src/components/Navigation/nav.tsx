@@ -4,7 +4,7 @@ import navLinks from '@/data/navLinks';
 
 const Navigation = () => {
     return (
-        <nav>
+        <nav className="my-auto" >
             <div className="group">
                 <ul className="flex flex-col space-y-4">
                     {navLinks.map((link, index) => (

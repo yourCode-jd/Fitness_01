@@ -53,10 +53,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
-
-  @media screen and (max-width: 768px) {
-    padding: 0 10px;
-  }
 }
 
 body,
@@ -107,6 +103,11 @@ em.animated.link:hover {
 
 section {
   padding-top: 150px;
+
+  @media screen and (max-width: 1023px) {
+    padding-top: 50px;
+  }
+
   /* height: 100vh; */
 }
 
@@ -123,16 +124,41 @@ section {
   font-family: "Cormorant Garamond", serif;
 }
 
+@media screen and (max-width: 1023px) {
+  .main_bannerHeading {
+    font-size: 48px;
+  }
+}
+
 .main_heading {
   font-size: 74px;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: normal;
+  }
 }
 
 .main_medHeading {
   font-size: 40px;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 32px;
+    line-height: 50px;
+  }
 }
 
 .main_smallHeading {
   font-size: 28px;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 24px;
+
+  }
 }
 
 .main_subHeading {
