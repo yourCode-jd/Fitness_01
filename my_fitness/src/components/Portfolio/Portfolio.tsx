@@ -22,7 +22,7 @@ function About() {
                         </p>
                         <button className='main_btn mt-6 '><span>-</span> Read More</button>
                     </motion.div>
-                    <div className='w-full lg:w-1/2 p-0 h-[500px] lg:h-[700px] masked-text'>
+                    <div className='w-full lg:w-1/2 p-0 h-[500px] lg:h-[700px] masked-text -z-1'>
                         <Image
                             src="/fitness2.jpeg"
                             alt="About Me"
