@@ -14,8 +14,8 @@ A practical wellness system combining mindful habits, nutrition coaching, moveme
 
 ## 🖼️ Screenshots
 
-![Desktop View](./public/NourishMotion_desktop.png)  
-![Responsive View](./public/NourishMotion_mobile.png)
+![Desktop View](./my_fitness/public/NourishMotion_desktop.png)  
+![Responsive View](./my_fitness/public/NourishMotion_mobile.png)
 
 ---
 
