@@ -1,11 +1,11 @@
 'use client'
 import React, { useRef } from 'react'
 import Image from 'next/image'
-import { motion, useInView } from 'framer-motion'
+// import { motion, useInView } from 'framer-motion'
 
 function About() {
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true, margin: '-100px' })
+    // const isInView = useInView(ref, { once: true, margin: '-100px' })
 
     return (
         <section ref={ref}>
@@ -35,17 +35,17 @@ function About() {
                             className='w-full h-full object-cover'
                         />
                     </div>
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={isInView ? { opacity: 1, x: 0 } : {}}
-                        transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+                    <div
+                        // initial={{ opacity: 0, x: 50 }}
+                        // animate={isInView ? { opacity: 1, x: 0 } : {}}
+                        // transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
                         className='w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left '>
                         <h2 className='main_heading relative left-0 lg:-left-40'>Elevate Your Body <br></br>and <em className='animated'>Mind</em></h2>
                         <p className='main_paragraph mt-10! md:mt-14! '>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos earum eius harum! Laborum et cum quaerat maiores sit, distinctio deserunt quas minima odit.
                         </p>
                         <button className='main_btn mt-6 '><span>-</span> Read More</button>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>
