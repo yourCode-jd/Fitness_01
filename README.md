@@ -8,7 +8,7 @@ A practical wellness system combining mindful habits, nutrition coaching, moveme
 
 ## 🚀 Github Demo
 
-[View Here](https://yourcode-jd.github.io/Fitness_01/)
+[View Here](https://yourcode-jd.github.io/NourishMotion/)
 
 ---
 
